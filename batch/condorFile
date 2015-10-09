@@ -1,0 +1,17 @@
+universe=grid
+Grid_Resource=condor cmssubmit-r1.t2.ucsd.edu glidein-collector.t2.ucsd.edu
++DESIRED_Sites="T2_US_UCSD"
+Should_Transfer_Files = YES
+WhenToTransferOutput = ON_EXIT
+Transfer_Input_Files = /home/users/jgwood/forCondor_bTagEffMaker_74x.tar.gz
+Transfer_Output_Files = /dev/null
+Output = logs/condorLog_ttbar_powheg_pythia8_25ns_99.stdout
+Error = logs/condorLog_ttbar_powheg_pythia8_25ns_99.stderr
+Log = logs/condorLog_ttbar_powheg_pythia8_25ns_99.log
++Owner = undefined
+Notify_user = jgwood@ucsd.physics.edu
+x509userproxy = /tmp/x509up_u31581
+Executable = condorExecutable.sh
+Transfer_executable = True
+arguments = ttbar_powheg_pythia8_25ns -1 99 /hadoop/cms/store/user/jgwood/condor/stop_1l_babies/stop_babies__CMS3_V070403_BTagEfficiencyMaker_V0704X_v6__run25ns__20151007/ forCondor_bTagEffMaker_74x bTagEfficiencyTools
+Queue 1
