@@ -253,7 +253,7 @@ int bTagEffMaker::looper(TChain* chain, char* output_name, int nEvents, char* pa
 	if( fabs(eta) > skim_jet_eta ) continue;
 
 
-	int flav   = pfjets_partonFlavour().at(idx);
+	int flav   = pfjets_hadronFlavour().at(idx);
 	
 	double csv = getbtagvalue("pfCombinedInclusiveSecondaryVertexV2BJetTags", idx);
       
@@ -306,6 +306,7 @@ int bTagEffMaker::looper(TChain* chain, char* output_name, int nEvents, char* pa
 	if( abs(flav) == 3 ||
 	    abs(flav) == 2 || 
 	    abs(flav) == 1 ||
+	    abs(flav) == 0 ||
 	    abs(flav) == 21   ){
 
 	  h2_BTaggingEff_csv_Denom_udsg->Fill( std::min(pt,pt_max), std::min(fabs(eta),eta_max) );
