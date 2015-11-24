@@ -133,6 +133,14 @@ SAMPLE
 Name T6bbWW_mStop425_mCh400_mLSP50
 Path /hadoop/cms/store/user/rcoelhol/T6bbWW_mStop425_mCh400_mLSP50/crab_T6bbWW_mStop425_mCh400_mLSP50_rcoelhol-T6bbWW_mStop425_mCh400_mLSP50_MINIAODSIM-6ba8269c843a1d8c287850c1a83e8873/CMS3_V07-04-06/merged/
 
+## some points from fastsim signals ##
+SAMPLE
+Name SMS-T1bbbb_mGluino-1000-1025_mLSP-1to975-1000
+Path /hadoop/cms/store/group/snt/run2_fastsim/SMS-T1bbbb_mGluino-1000-1025_mLSP-1to975-1000_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_RunIISpring15MiniAODv2-FastAsympt25ns_74X_mcRun2_asymptotic_v2-v1/V07-04-11_FS/
+
+SAMPLE
+Name SMS-T1qqqq_mGluino-1000to1025_mLSP-1to1000
+Path /hadoop/cms/store/group/snt/run2_fastsim/SMS-T1qqqq_mGluino-1000to1025_mLSP-1to1000_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_RunIISpring15MiniAODv2-FastAsympt25ns_74X_mcRun2_asymptotic_v2-v1/V07-04-11_FS/
 
 ## ttbar ###
 SAMPLE
